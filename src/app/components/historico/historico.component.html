@@ -1,0 +1,84 @@
+<aside *ngIf="lightbox" id="light-box">
+    <span (click)="closeLightBox()" class="material-symbols-outlined close">close</span>
+
+    <div>
+        <span class="material-symbols-outlined">star</span>
+        <span class="material-symbols-outlined">star</span>
+        <span class="material-symbols-outlined">star</span>
+        <span class="material-symbols-outlined">star</span>
+        <span class="material-symbols-outlined">star</span>
+    </div>
+    <div class="comentarios">
+        <a>Enviar comentarios</a>
+        <a>Denunciar<span class="material-symbols-outlined">
+            priority_high
+            </span></a>
+    </div>
+</aside>
+<main>
+    <h1><span (click)="return()" class="material-symbols-outlined">arrow_back</span>Histórico de compras</h1>
+
+    <section>
+        <div class="itens-box">
+            <div class="itens">
+                <h1>Mouse Logitech</h1>
+            </div>
+            <div class="valor">
+                <h3>R$70,00</h3>
+                <div>
+                    <span class="material-symbols-outlined">info</span>
+                    <span class="material-symbols-outlined">receipt_long</span>
+                </div>
+
+            </div>
+
+            <p>Vendedor: Carlos Miguel</p>
+        </div>
+         
+        <div (click)="exibirLightBox()" class="avaliar nao-avaliado">
+            <h3>Avaliar</h3>
+        </div>
+    </section>
+    <section>
+        <div class="itens-box">
+            <div class="itens">
+                <h1>Coberta de algod...</h1>
+            </div>
+            <div class="valor">
+                <h3>R$60,00</h3>
+                <div>
+                    <span class="material-symbols-outlined">info</span>
+                    <span class="material-symbols-outlined">receipt_long</span>
+                </div>
+
+            </div>
+
+            <p>Vendedor: Rose Rosa</p>
+        </div>
+         
+        <div class="avaliar">
+            <h3>Avaliado <span class="material-symbols-outlined">done</span></h3>
+        </div>
+    </section>
+    <section>
+        <div class="itens-box">
+            <div class="itens">
+                <h1>Cadeira de escritó...</h1>
+            </div>
+            <div class="valor">
+                <h3>R$150,00</h3>
+                <div>
+                    <span class="material-symbols-outlined">info</span>
+                    <span class="material-symbols-outlined">receipt_long</span>
+                </div>
+
+            </div>
+
+            <p>Vendedor: João Matos</p>
+        </div>
+         
+        <div class="avaliar">
+            <h3>Avaliado <span class="material-symbols-outlined">done</span></h3>
+        </div>
+    </section>
+</main>

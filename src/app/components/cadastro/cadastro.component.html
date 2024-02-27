@@ -1,0 +1,25 @@
+<main>
+    <h1>Faça seu cadastro</h1>
+    <p>Utilize o seu email institucional</p>
+
+    <form>
+        <fieldset><legend>Nome completo</legend>
+            <input id="nome" name="nome" type="text">
+       </fieldset>
+       <fieldset><legend>E-mail</legend>
+            <input id="email" name="email" type="email">
+       </fieldset>
+       <fieldset><legend>Senha</legend>
+            <input id="password" name="password" type="password">
+            <span class="material-symbols-outlined">visibility</span>
+       </fieldset>
+       <fieldset><legend>Confirme a senha</legend>
+        <input id="password" name="password" type="password">
+   </fieldset>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p>Já possui conta? <span (click)="login()">Faça o Login</span></p>
+</main>
+
