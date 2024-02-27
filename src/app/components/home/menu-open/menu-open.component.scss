@@ -1,0 +1,51 @@
+@import "../../../variables-color.scss";
+
+nav {
+    width: 50%;
+    background-color: $bg-menu;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+
+section {
+
+    display: flex;
+    h3 {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    span {
+        background-color: $bg-menu;
+        width: 100%;
+        right: -100%;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+
+        a {
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 255, 0.448);
+        }
+    }
+}
+
+section:hover {
+    background-color: rgba(0, 0, 255, 0.448);
+}
+
+section:hover > span {
+    display: flex;
+}

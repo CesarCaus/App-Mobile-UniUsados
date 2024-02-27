@@ -1,0 +1,148 @@
+@import url(../../../variables-color.scss);
+
+.novos-produtos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    margin-top: 40px;
+    width: calc(100% - 20px);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px -10px 20px rgb(224, 223, 223);
+    background-color: rgb(240, 240, 240);
+  }
+  
+  section {
+    display: flex;
+    width: calc(100vw - 40px);
+    gap: 20px;
+    overflow: auto;
+    padding: 20px;
+  }
+  
+  .item {
+    flex-shrink: 0;
+    width: 140px;
+    height: 160px;
+    border: none;
+    box-shadow: 5px 5px 20px rgb(200, 195, 195);
+    border-radius: 5px;
+    overflow: hidden;
+
+    h3 {
+      border-top: none;
+      width: 100%;
+      margin-bottom: -10px;
+      box-shadow: none;
+      font-size: 12px;
+      padding: 0;
+      margin-top: 10px;
+      z-index: 1;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px rgba(196, 196, 196, 0.429);
+      background-color: white;
+    }
+
+    img {
+      width: 100%;
+      height: 100px;
+    }
+
+    h4 {
+      width: 100%;
+      height: 50px;
+      line-height: 40px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+    }
+  }
+
+
+.vendedores-populares {
+  h3 {
+    box-shadow: none;
+    margin-top: 30px;
+    border-top: none;
+    box-shadow: 0px -10px 20px rgb(224, 223, 223);
+  }
+
+  .item {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.todos-produtos {
+  
+  section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns:27vw 27vw 27vw;
+    gap: 15px;
+  }
+
+  h3 {
+    border-top: none;
+    box-shadow: 0px -10px 20px rgb(224, 223, 223);
+  }
+
+
+  .item {
+    width: 100px;
+    height: 130px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+
+    img {
+      width: 90%;
+      height: 80px;
+      padding: 5px;
+    }
+
+    h4 {
+      margin-top: -10px;
+    }
+
+    h5 {
+      margin-top: -10px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  
+    a {
+      color: black;
+    }
+
+    span {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}

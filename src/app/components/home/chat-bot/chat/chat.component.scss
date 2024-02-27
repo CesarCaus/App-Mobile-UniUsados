@@ -1,0 +1,90 @@
+main {
+    width: 70%;
+    height: 350px;
+    font-family: 'Poppins', sans-serif;
+
+    position: fixed;
+
+    bottom: 185px;
+    right: 75px;
+
+    background-color: rgba(255, 255, 255, 0.775);
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    section {
+        position: relative;        
+        width: 90%;
+        height: 327.5px;
+        border: 1px solid black;
+        border-radius: 20px;
+        z-index: 2;
+        background-color: white;
+
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            width: calc(100% - 20px);
+            height: 30px;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            background-color: rgb(240, 240, 
+            240);
+            box-shadow: 1px 1px 10px rgb(166, 166, 166);
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            width: 90%;
+            padding: 3px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 20px 5px;
+            background-color: rgba(34, 34, 119, 0.211);
+            box-shadow: 1px 1px 20px rgb(185, 184, 184);
+        }
+        
+
+        .enviar {
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            left: 12.5px;
+
+            input {
+                font-size: 14px;
+                width: calc(90% - 20px);
+                padding-left: 20px;
+                border: 1px solid black;
+                border-radius: 20px;
+                height: 30px;
+            }
+
+            span {
+                width: 25px;
+                height: 25px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                position: absolute;
+                top: 3px;
+                right: 27px;
+            }
+        }
+    }
+}

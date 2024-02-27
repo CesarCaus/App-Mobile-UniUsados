@@ -1,0 +1,23 @@
+<main>
+    <h1>Acesse sua conta</h1>
+    <p>Lembre-se de entrar com seu email institucional</p>
+
+    <form>
+       <fieldset><legend>E-mail</legend>
+            <input id="email" name="email" type="email">
+       </fieldset>
+       <fieldset><legend>Senha</legend>
+            <input id="password" name="password" type="password">
+            <span class="material-symbols-outlined">
+                visibility
+                </span>
+       </fieldset>
+
+       <button (click)="informacoes()">Entrar</button>
+        
+    </form>    
+
+    <p>Não possui conta? <span (click)="cadastro()">Cadastre-se</span></p>
+</main>
+
+
